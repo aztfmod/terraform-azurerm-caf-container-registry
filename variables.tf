@@ -33,3 +33,19 @@ variable "georeplication_locations" {
     description = "(Optional) A list of Azure locations where the container registry should be geo-replicated."
     default = null
 }
+
+variable "diagnostics_settings" {
+ description = "(Required) Map with the diagnostics settings for AzFW deployment"
+}
+
+variable "convention" {
+  description = "(Required) Naming convention method to use"  
+}
+
+variable "diagnostics_map" {
+  description = "(Required) Storage Account and Event Hub data for the AzFW diagnostics"    
+}
+
+variable "log_analytics_workspace_id" {
+  
+}
