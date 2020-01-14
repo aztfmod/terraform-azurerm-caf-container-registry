@@ -1,4 +1,4 @@
-odule "caf_name_gen" {
+module "caf_name_gen" {
   source  = "aztfmod/caf-naming/azurerm"
   version = "~> 0.1.0"
 
