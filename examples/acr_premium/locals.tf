@@ -1,6 +1,6 @@
 locals {
     convention = "random"
-    name = "caftestacr"
+    name = "caftestacrdeploy"
     location = "southeastasia"
     prefix = ""
     resource_groups = {

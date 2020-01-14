@@ -35,7 +35,7 @@ variable "georeplication_locations" {
 }
 
 variable "diagnostics_settings" {
- description = "(Required) Map with the diagnostics settings for AzFW deployment"
+ description = "(Required) Map with the diagnostics settings."
 }
 
 variable "convention" {
@@ -43,9 +43,9 @@ variable "convention" {
 }
 
 variable "diagnostics_map" {
-  description = "(Required) Storage Account and Event Hub data for the AzFW diagnostics"    
+  description = "(Required) Storage Account and Event Hub data for the diagnostics"    
 }
 
 variable "log_analytics_workspace_id" {
-  
+  description = "(Required) Log analytics repository ID"
 }
