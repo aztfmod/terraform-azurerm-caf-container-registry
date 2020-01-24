@@ -19,6 +19,7 @@ locals {
             "product"   = "OMSGallery/NetworkMonitoring"
         },
     }
+    enable_event_hub = false
 
     sku = "Premium"
     georeplication_locations = ["eastasia", "eastus2"]

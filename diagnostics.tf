@@ -4,7 +4,7 @@ module "diagnostics_acr" {
 
   name                            = azurerm_container_registry.acr.name
   resource_id                     = azurerm_container_registry.acr.id
-  log_analytics_workspace_id      = var.log_analytics_workspace_id
+  log_analytics_workspace_id      = var.la_workspace_id
   diagnostics_map                 = var.diagnostics_map
   diag_object                     = var.diagnostics_settings
 }
