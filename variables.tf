@@ -6,7 +6,7 @@ variable "name" {
     description = "(Required) Specifies the name of the Container Registry. Changing this forces a new resource to be created."
 }
 
-variable "resource_group_name" {
+variable "rg" {
     description = "(Required) The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created."
 }
 
@@ -46,6 +46,6 @@ variable "diagnostics_map" {
   description = "(Required) Storage Account and Event Hub data for the diagnostics"    
 }
 
-variable "log_analytics_workspace_id" {
+variable "la_workspace_id" {
   description = "(Required) Log analytics repository ID"
 }
