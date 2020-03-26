@@ -31,8 +31,8 @@ module "acr" {
 | diagnostics_settings | object | None | (Required) Map with the diagnostics settings for ASR deployment. See the required structure in the following example or in the diagnostics module documentation. | 
 | admin_enabled | bool | False | (Optional) Specifies whether the admin user is enabled. | 
 | sku | string | Basic | (Optional) The SKU name of the the container registry. Possible values are Basic, Standard and Premium. Default = Basic.  | 
-| georeplication_locations | list | null | A list of Azure locations where the container registry should be geo-replicated (only valid if SKU is premium) | 
-| convention | string | None | Naming convention to be used (check at the naming convention module for possible values).  | 
+| georeplication_locations | list | null | (Optional) A list of Azure locations where the container registry should be geo-replicated (only valid if SKU is premium) | 
+| convention | string | None | (Required) Naming convention to be used (check at the naming convention module for possible values).  | 
 | prefix | string | None | (Optional) Prefix to be used. |
 | postfix | string | None | (Optional) Postfix to be used. |
 | max_length | string | None | (Optional) maximum length to the name of the resource. |
