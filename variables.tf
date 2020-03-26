@@ -1,12 +1,8 @@
-variable "prefix" {
-
-}
-
 variable "name" {
     description = "(Required) Specifies the name of the Container Registry. Changing this forces a new resource to be created."
 }
 
-variable "rg" {
+variable "resource_group_name" {
     description = "(Required) The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created."
 }
 
@@ -48,4 +44,22 @@ variable "diagnostics_map" {
 
 variable "la_workspace_id" {
   description = "(Required) Log analytics repository ID"
+}
+
+variable "prefix" {
+  description = "(Optional) You can use a prefix to the name of the resource"
+  type        = string
+  default = ""
+}
+
+variable "postfix" {
+  description = "(Optional) You can use a postfix to the name of the resource"
+  type        = string
+  default = ""
+}
+
+variable "max_length" {
+  description = "(Optional) You can speficy a maximum length to the name of the resource"
+  type        = string
+  default = ""
 }
