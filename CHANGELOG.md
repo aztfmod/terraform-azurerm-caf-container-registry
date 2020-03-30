@@ -1,3 +1,10 @@
+## v2.0 (March 2020)
+
+IMPROVEMENTS:
+
+* **new feature:**  Add support for azurerm 2.x and azurecaf providers ([#8](https://github.com/aztfmod/terraform-azurerm-caf-container-registry/issues/8))
+
+
 ## v1.0 (January 2020)
 
 FEATURES: 
